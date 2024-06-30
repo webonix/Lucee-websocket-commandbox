@@ -38,7 +38,7 @@ cp ./test.cfc "$installdir/WEB-INF/lucee-server/context/websockets/"
 cp ./test2.cfc "$installdir/WEB-INF/lucee-server/context/websockets/"
 
 echo "using CFConfig to create websocket log file"
-box cfconfig  import CFConfig-websocket-log.json lucee6 
+box cfconfig  import from=CFConfig-websocket-log.json to=lucee6 
 
 echo "restarting Lucee Server"
 # restart Lucee to ick up ne websocker

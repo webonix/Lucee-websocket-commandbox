@@ -1,12 +1,10 @@
 {
 	"loggers": {
-	  "websocket":{
-            "appender":"resource",
-            "appenderArguments":{
-                "path":"{lucee-config}/logs/websocket.log"
-            },
-            "layout":"classic",
-			"level": "trace"
-        }
+	  "websocket": {
+		"appender": "resource",
+		"appenderArguments": "path:{lucee-config}/logs/websocket.log",
+		"level": "trace",
+		"layout": "classic"
+	  }
   }
 }
