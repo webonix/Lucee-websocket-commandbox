@@ -78,7 +78,7 @@ component {
 				return "hi there also,again!!!";
 			}
 			else {
-				return "fuck off!!!";
+				return "should not be here";
 			}
 		}
 		return reverse(arguments.message);
