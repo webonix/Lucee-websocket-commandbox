@@ -1,0 +1,48 @@
+{
+    "name":"lucee6",
+    "openBrowser":false,
+    "openBrowserURL":"/",
+    "web":{
+        "host":"127.0.0.1",
+        "webroot":"./lucee6/www/",
+        "directoryBrowsing":false,
+        "welcomeFiles":"index.cfm",
+        "HTTP":{
+            "enable":true,
+            "port":8091
+        },
+        "ssl":{
+            "enable":true,
+            "port":4433,
+            "forceSSLRedirect":true
+        }
+    },
+    "app":{
+        "cfengine":"lucee@6.1.0-RC+193",
+        "serverHomeDirectory":"./lucee6",
+        "web":{
+            "context":"/",
+            "rewrites":true
+        }
+    },
+    "dockEnable":true,
+    "trayEnable":true,
+    "trayOptions":[
+        {
+            "label":"Lucee Admin",
+            "action":"openbrowser",
+            "url":"http://127.0.0.1:8091/lucee/admin.cfm",
+            "disabled":false,
+            "image":"./lucee-logo.jpg"
+        },
+        {
+            "label":"Open VScode",
+            "action":"runAsync",
+            "command":"code .",
+            "disabled":false,
+            "image":"/path/to/image.png"
+        }
+    ],
+    "env":{},
+    "no-open":true
+}
